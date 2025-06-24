@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사업계획서 작성, 이제 AI 전문가와 함께 하세요 | Gemini 활용 역량 강화</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css" type="text/css"/>
+    <style>
+        body, html {
+            font-family: "Paperlogy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+        }
+        .slide {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 4rem;
+            box-sizing: border-box;
+            overflow: hidden; 
+        }
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #a0a0a0;
+            max-width: 800px;
+            margin: 0 auto 1.5rem auto;
+        }
+        .content-card {
+             background-color: rgba(30, 30, 30, 0.8);
+             border: 1px solid #333;
+             border-radius: 1rem;
+             padding: 1.5rem; /* Reduced padding for compact cards */
+             backdrop-filter: blur(10px);
+        }
+        pre {
+            background: #2a2a2a;
+            padding: 1em;
+            border-radius: 8px;
+            overflow-wrap: break-word;
+            white-space: pre-wrap;
+            color: #e0e0e0;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+        }
+        .kpi-card {
+            background: #1e1e1e;
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+            border: 1px solid #00ffff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+        ul {
+            list-style-position: inside;
+        }
+        .red-check {
+            color: #ef4444;
+            font-weight: bold;
+        }
+        .outlook-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+        }
+        .outlook-button {
+            width: 100%;
+            text-align: left;
+            padding: 0.75rem 1rem;
+            font-weight: bold;
+            font-size: 1.125rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #F472B6; 
+            cursor: default;
+        }
+        .outlook-content {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: #b0b0b0;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        @media print {
+            html, body {
+                -webkit-print-color-adjust: exact;
+            }
+            .slide {
+                height: 100vh;
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+            .slide:last-child {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-7xl font-black leading-tight" style="color: #e0e0e0;">사업계획서 작성, 이제 AI 전문가와 함께 하세요</h1>
+            <p class="text-xl text-gray-400 mt-6 max-w-3xl mx-auto">Gemini를 활용한 생활체육지도자 역량 강화: 반복 업무는 줄이고, 기획의 질은 높이는 새로운 패러다임</p>
+            <p class="text-2xl text-gray-200 mt-12">아르테 Artet CEO 김혜련</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="text-center w-full max-w-4xl">
+            <h2 class="section-title">오늘, 우리의 '고충'에 대해 이야기 해 봅시다</h2>
+            <div class="mt-12 text-left space-y-4 text-xl">
+                <p class="content-card"><span class="red-check">✓</span> <strong>광범위한 업무 범위:</strong> 현장 지도 외 프로그램 기획, 행정, 동호인 관리 등 과도한 업무 부담</p>
+                <p class="content-card"><span class="red-check">✓</span> <strong>창의성의 압박:</strong> 반복되는 서류 작업의 피로감, 신규 아이디어 창출의 압박, 만성적인 시간 부족</p>
+                <p class="content-card"><span class="red-check">✓</span> <strong>성장의 정체:</strong> 경력과 보상이 비례하지 않는 구조적 문제로 인한 동기부여 저하</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="text-center w-full max-w-4xl">
+            <h2 class="section-title">만약, 당신에게 '24시간 대기하는 기획 전문가'가 생긴다면?</h2>
+            <div class="mt-8 text-left space-y-4 text-xl"> 
+                <p class="content-card"><span class="red-check">✓</span> <strong>AI 파트너 Gemini:</strong> 복잡한 자료조사, 막막한 사업 아이디어 제안, 보고서 문장 작성까지 돕는 전문가</p>
+                <p class="content-card"><span class="red-check">✓</span> <strong>단순 도구를 넘어선 협업:</strong> 사용자의 지시에 따라 자율적으로 창의적 콘텐츠를 생성하는 디지털 동반자</p>
+                <p class="content-card"><span class="red-check">✓</span> <strong>'똑똑한 후배' 또는 '유능한 비서':</strong> 명확한 지시를 통해 최고의 결과물을 만들어내는 효율적 파트너</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="text-center w-full max-w-4xl">
+            <h2 class="section-title">강의 목표: 이 세 가지를 얻어 가실 겁니다</h2>
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="kpi-card">
+                    <div class="text-6xl mb-4">💡</div>
+                    <h3 class="text-2xl font-bold text-cyan-400">자신감</h3>
+                    <p class="text-gray-300 mt-2 text-lg">어떤 주제든 '어디서부터 시작할지' 막막하지 않은, 실행할 수 있다는 자신감 획득</p>
+                </div>
+                <div class="kpi-card">
+                    <div class="text-6xl mb-4">⏱️</div>
+                    <h3 class="text-2xl font-bold text-cyan-400">시간</h3>
+                    <p class="text-gray-300 mt-2 text-lg">서류 작업 시간을 80% 이상 단축, 현장 지도와 프로그램 질적 향상에 투자할 귀중한 시간 확보</p>
+                </div>
+                 <div class="kpi-card">
+                     <div class="text-6xl mb-4">🧠</div>
+                    <h3 class="text-2xl font-bold text-cyan-400">논리</h3>
+                    <p class="text-gray-300 mt-2 text-lg">인천시 정책과 데이터에 기반한, 누구에게나 설득력 있는 기획서를 작성하는 체계적 논리 습득</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="w-full max-w-5xl text-center">
+            <h2 class="section-title">강의 전체 로드맵</h2>
+            <div class="content-card mt-12 text-left p-10">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-pink-400">Part 1. 왜 AI인가?</h3>
+                        <p class="mt-2 text-gray-400">공감대 형성 및 동기부여</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-cyan-400">Part 2. Gemini와 대화하는 법</h3>
+                        <p class="mt-2 text-gray-400">핵심 기술(프롬프트) 습득</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-yellow-400">Part 3. 실전! 사업계획서 A to Z</h3>
+                        <p class="mt-2 text-gray-400">실전 워크숍</p>
+                    </div>
+                     <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-xl font-bold text-purple-400">Part 4. 전문가로 거듭나기</h3>
+                        <p class="mt-2 text-gray-400">심화 활용 및 윤리</p>
+                    </div>
+                </div>
+                 <ul class="mt-10 space-y-4 text-lg text-gray-300 list-disc">
+                    <li><strong>학습 경로 예측:</strong> 강의의 전체적인 흐름을 안내하여 체계적인 학습 경험 제공</li>
+                    <li><strong>단계별 목표 제시:</strong> 각 파트별 핵심 키워드와 목표를 명확히 하여 학습 효과 극대화</li>
+                    <li><strong>실전 중심 구성:</strong> 이론 학습(Part 2)에서 실전 워크숍(Part 3)으로, 다시 심화 및 윤리(Part 4)로 심화되는 구조</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="w-full max-w-6xl">
+            <h2 class="section-title text-center mb-8">Part 1: 왜 AI가 강력한 무기가 되는가?</h2>
+            <p class="section-subtitle text-center">우리는 현장의 전문가이지만, 동시에 수많은 서류와 씨름하는 행정가입니다. 반복적인 업무의 피로감, 새로운 아이디어에 대한 압박감 속에서 우리의 열정이 짓눌리고 있습니다. 바로 이 지점에서, AI는 우리의 가장 강력한 돌파구가 될 수 있습니다.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                <div class="content-card text-left p-8">
+                    <h3 class="text-3xl font-bold mb-4 text-pink-500">Before: The Old Way</h3>
+                    <p class="text-gray-400 mb-4">자료 조사, 목차 구성, 초안 작성, 수정... 꼬박 며칠이 걸리는 고된 과정</p>
+                    <ul class="space-y-2 text-lg">
+                        <li>자료 조사: <strong class="text-cyan-400">5 시간</strong></li>
+                        <li>목차 구성: <strong class="text-cyan-400">3 시간</strong></li>
+                        <li>초안 작성: <strong class="text-cyan-400">10 시간</strong></li>
+                        <li>수정 및 검토: <strong class="text-cyan-400">5 시간</strong></li>
+                        <li class="border-t border-gray-600 pt-2 mt-4">총 소요 시간: <strong class="text-pink-500 text-2xl">23+ 시간</strong></li>
+                    </ul>
+                </div>
+                <div class="content-card text-left p-8">
+                    <h3 class="text-3xl font-bold mb-4 text-cyan-400">After: The Gemini Effect</h3>
+                    <p class="text-gray-400 mb-4">'어떤 결과물을 원한다'는 명확한 지시에 집중하고, 핵심적인 수정 작업에만 집중</p>
+                     <ul class="space-y-2 text-lg">
+                        <li>핵심 프롬프트 설계: <strong class="text-pink-500">30 분</strong></li>
+                        <li>Gemini 초안 생성: <strong class="text-pink-500">5 분</strong></li>
+                        <li>사실 확인 및 전문가 관점 수정: <strong class="text-pink-500">3 시간</strong></li>
+                         <li class="border-t border-gray-600 pt-2 mt-4">총 소요 시간: <strong class="text-cyan-400 text-2xl">~3.5 시간</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="w-full max-w-4xl text-center">
+            <h2 class="section-title">Part 2: Gemini와 대화하는 법</h2>
+            <div class="content-card mt-12 p-10">
+                 <h3 class="text-4xl font-bold text-yellow-300 mb-6">"Garbage In, Garbage Out"</h3>
+                <ul class="space-y-6 text-xl text-left list-disc">
+                    <li><strong>Gemini의 작동 원리:</strong> 방대한 데이터를 학습하여 사용자의 질문 다음에 올 가장 '확률 높은 단어'를 예측/생성함</li>
+                    <li><strong>품질의 책임:</strong> 프롬프트(질문)가 모호하고 질이 낮으면, AI의 답변 역시 질이 낮을 수 밖에 없음</li>
+                    <li><strong>고성능 도구로써의 AI:</strong> '알아서 잘' 해주는 마법이 아닌, 명확한 지시를 통해 최고의 성능을 발휘하는 도구임</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+         <div class="w-full max-w-5xl text-center">
+            <h2 class="section-title">Bad Prompt vs. Good Prompt</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div class="content-card p-8 border-l-4 border-pink-500">
+                     <h3 class="text-3xl font-bold mb-4 text-pink-500">Bad Prompt</h3>
+                     <pre class="text-left text-base"><code>"생활체육 프로그램 아이디어 좀 줘."</code></pre>
+                     <p class="mt-6 text-lg text-gray-400">→ 모호하고, 일반적이며, 추가 질문을 유발함</p>
+                </div>
+                 <div class="content-card p-8 border-l-4 border-cyan-400">
+                     <h3 class="text-3xl font-bold mb-4 text-cyan-400">Good Prompt</h3>
+                     <p class="mt-6 text-lg text-gray-300">[역할], [맥락], [형식], [제한] 4요소를 모두 포함한 구체적인 지시</p>
+                      <p class="mt-6 text-lg text-yellow-300"><strong>결과의 차이:</strong> 단 한 번의 요청으로, 후반 작업이 필요 없는 체계적이고 현실적인 결과물 확보</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="w-full max-w-6xl">
+            <h2 class="section-title text-center">강력한 프롬프트의 4대 핵심 요소</h2>
+            <p class="section-subtitle text-center">"Garbage In, Garbage Out." AI 시대의 핵심 원칙입니다. 좋은 질문이 좋은 답변을 만듭니다.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                <div class="content-card text-left p-6 h-full flex flex-col">
+                    <div class="text-5xl mb-4">🎭</div>
+                    <h3 class="text-xl font-bold mb-2 text-cyan-400">1. 역할 부여 (Persona)</h3>
+                    <p class="text-gray-300 mb-3 flex-grow">AI에게 명확한 정체성을 부여하여 답변의 관점, 전문성, 어조를 설정합니다.</p>
+                     <div class="border-l-2 border-blue-500 pl-3 text-sm">
+                       <p><strong>예:</strong><br>"너는 15년차 생활체육 정책 전문가야."</p>
+                    </div>
+                </div>
+                <div class="content-card text-left p-6 h-full flex flex-col">
+                    <div class="text-5xl mb-4">🗺️</div>
+                    <h3 class="text-xl font-bold mb-2 text-green-400">2. 구체적 상황 (Context)</h3>
+                    <p class="text-gray-300 mb-3 flex-grow">해결해야 할 문제와 배경을 상세히 설명하여 상황에 맞는 맞춤형 답변을 생성하게 합니다.</p>
+                    <div class="border-l-2 border-green-500 pl-3 text-sm">
+                       <p><strong>예:</strong><br>"청소년 비만율 증가 문제를 해결하기 위한 사업이야."</p>
+                    </div>
+                </div>
+                <div class="content-card text-left p-6 h-full flex flex-col">
+                    <div class="text-5xl mb-4">🎯</div>
+                    <h3 class="text-xl font-bold mb-2 text-purple-400">3. 목적 명시 (Purpose)</h3>
+                    <p class="text-gray-300 mb-3 flex-grow">달성하고자 하는 구체적인 목표와 의도를 명확히 제시하여 방향성을 설정합니다.</p>
+                    <div class="border-l-2 border-purple-400 pl-3 text-sm">
+                       <p><strong>예시:</strong><br>"시민들의 건강 증진과 생활 만족도 향상을 위한 정책 제안이 목적이야."</p>
+                    </div>
+                </div>
+                 <div class="content-card text-left p-6 h-full flex flex-col">
+                    <div class="text-5xl mb-4">📝</div>
+                    <h3 class="text-xl font-bold mb-2 text-yellow-400">4. 예시 제공 (Example)</h3>
+                    <p class="text-gray-300 mb-3 flex-grow">원하는 결과물의 형태(보고서, 표 등)와 작업 시 지켜야 할 조건들을 구체적으로 제시합니다.</p>
+                     <div class="border-l-2 border-yellow-400 pl-3 text-sm space-y-2">
+                       <p><strong>형식 예시:</strong><br>"아이디어 3가지를 표로 정리해줘."</p>
+                       <p><strong>제약 예시:</strong><br>"200자 이내로, 전문 용어는 쉽게 설명해줘."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="w-full max-w-6xl">
+            <h2 class="section-title text-center">Part 3: 실전! 사업계획서 A to Z</h2>
+            <p class="section-subtitle text-center text-xl">가상 프로젝트: 인천시 미추홀구 거주 어르신 낙상 예방 및 근력 강화를 위한 '시니어 활력 충전 교실'</p>
+            <div class="content-card p-6">
+                <h3 class="text-3xl font-bold mb-3 text-cyan-400">1단계: 사업의 필요성 (데이터로 논리 쌓기)</h3>
+                <p class="mb-4 text-gray-300 text-base">'우리 동네에 노인이 많으니까요'라는 막연한 주장 대신, 데이터와 정책으로 무장해야 합니다. 단 두 번의 프롬프트로 설득력 있는 '사업 필요성' 문단을 완성할 수 있습니다.</p>
+                <ul class="text-base text-gray-400 space-y-2 mb-4">
+                    <li><span class="red-check">✓</span> <strong>데이터 수집:</strong> 신뢰도 높은 출처(통계청 등)를 명시, 미추홀구 노인 인구 및 낙상 관련 통계 확보 요청</li>
+                    <li><span class="red-check">✓</span> <strong>정책 연계:</strong> 확보된 데이터를 인천시 상위 계획과 연결하여 사업의 당위성을 설득력 있는 글로 작성 요청</li>
+                </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <p class="font-semibold text-lg mb-2 text-yellow-300">Prompt 1: 데이터 수집 및 요약</p>
+                        <pre><code>너는 대한민국 정부의 공공데이터 분석 전문가야. 통계청 KOSIS 자료 기반으로, 다음 정보를 찾아서 요약해줘.
+1. 인천광역시 미추홀구의 65세 이상 노인 인구 수와 비율.
+2. 대한민국 노인의 주요 사고 원인 중 '낙상' 관련 통계.</code></pre>
+                    </div>
+                    <div>
+                        <p class="font-semibold text-lg mb-2 text-yellow-300">Prompt 2: 정책 연계 및 논리 작성</p>
+                        <pre><code>너는 인천광역시 체육회의 정책 기획 전문가야. 방금 찾은 데이터를 활용해서, '시니어 활력 충전 교실' 사업이 인천시의 '시민 건강 증진 정책'에 왜 필요한지를 500자 내외의 설득력 있는 문장으로 작성해줘. '사업의 시급성', '사회적 비용 절감 효과', '정책 목표 기여' 3가지 근거를 포함해줘.</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="w-full max-w-6xl">
+            <h2 class="section-title text-center">Part 3: 실전! 사업계획서 A to Z</h2>
+             <p class="section-subtitle text-center text-xl">가상 프로젝트: '시니어 활력 충전 교실'</p>
+            <div class="content-card p-6">
+                <h3 class="text-3xl font-bold mb-3 text-cyan-400">2단계: 프로그램 세부 내용 (전문성 구체화하기)</h3>
+                <p class="mb-4 text-gray-300 text-base">지도자의 전문 지식과 경험을 체계적인 커리큘럼 문서로 구체화하는 과정입니다. AI는 우리의 머릿속에 있던 노하우를 빠르게 조직화하고 시각화합니다.</p>
+                 <ul class="text-base text-gray-400 space-y-2 mb-4">
+                    <li><span class="red-check">✓</span> <strong>콘텐츠 브레인스토밍:</strong> '재활의학 전문가' 역할 부여, 낙상 예방에 효과적인 운동 추천 요청</li>
+                    <li><span class="red-check">✓</span> <strong>커리큘럼 설계:</strong> 지도자 경험을 녹여 '적응기-강화기-유지기' 등 단계별 커리큘럼 초안 설계 요청</li>
+                    <li><span class="red-check">✓</span> <strong>지식의 조직화:</strong> 지도자의 머릿속 전문 지식을 체계적이고 설득력 있는 문서로 신속하게 시각화</li>
+                </ul>
+                <div>
+                    <p class="font-semibold text-lg mb-2 text-yellow-300">Prompt: 커리큘럼 설계</p>
+                    <pre><code>너는 20년 경력의 시니어 전문 생활체육지도자야. [균형감각, 하지 근력, 유연성 향상 운동 목록]을 활용해서, 총 8주 과정의 '시니어 활력 충전 교실' 주간 커리큘럼 초안을 작성해줘. 1-2주는 '적응기', 3-6주는 '강화기', 7-8주는 '유지기'로 단계를 나누고, 각 주차별 목표와 주요 운동 내용을 포함한 표 형식으로 구성해줘.</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="w-full max-w-6xl">
+            <h2 class="section-title text-center">Part 3: 실전! 사업계획서 A to Z</h2>
+             <p class="section-subtitle text-center text-xl">가상 프로젝트: '시니어 활력 충전 교실'</p>
+            <div class="content-card p-6">
+                <h3 class="text-3xl font-bold mb-3 text-cyan-400">3단계: 예산 수립 (꼼꼼함 증명하기)</h3>
+                <p class="mb-4 text-gray-300 text-base">놓치기 쉬운 보험료, 홍보물 제작비 등 자잘한 항목까지 꼼꼼하게 챙기고, 각 항목의 산출 근거를 논리적으로 작성합니다.</p>
+                 <ul class="text-base text-gray-400 space-y-2 mb-4">
+                    <li><span class="red-check">✓</span> <strong>예산 항목 도출:</strong> '예산 담당자' 역할 부여, 인건비, 운영비 등 놓치기 쉬운 항목까지 전체 리스트업</li>
+                    <li><span class="red-check">✓</span> <strong>산출근거 작성:</strong> '왜 이 물품이 필요한지' 등 각 항목의 세부 산출 사유를 포함한 상세 내역 작성</li>
+                    <li><span class="red-check">✓</span> <strong>신뢰도 확보:</strong> 꼼꼼하고 논리적인 예산 계획을 통해 사업의 실현 가능성과 신뢰도 증명</li>
+                </ul>
+                <div>
+                    <p class="font-semibold text-lg mb-2 text-yellow-300">Prompt: 예산 설계</p>
+                    <pre><code>너는 공공 체육시설 예산 담당자야. '시니어 활력 충전 교실' (8주, 주2회, 20명 기준) 운영에 필요한 모든 예산 항목을 '인건비', '운영비', '물품비', '기타'로 분류하여 체크리스트를 만들고, '운동용품 구매'에 대한 상세 산출 근거를 표로 작성해줘.</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="w-full max-w-6xl">
+            <h2 class="section-title text-center">Part 3: 실전! 사업계획서 A to Z</h2>
+             <p class="section-subtitle text-center text-xl">가상 프로젝트: '시니어 활력 충전 교실'</p>
+            <div class="content-card p-6">
+                <h3 class="text-3xl font-bold mb-3 text-cyan-400">4단계: 성과 측정 (데이터로 증명하기)</h3>
+                <p class="mb-4 text-gray-300 text-base">'좋았습니다'라는 막연한 평가가 아닌, '참가율', '체력 점수 변화' 등 구체적인 데이터로 사업의 성공을 증명할 방법을 설계합니다.</p>
+                <ul class="text-base text-gray-400 space-y-2 mb-4">
+                    <li><span class="red-check">✓</span> <strong>성과지표 개발:</strong> '성과평가 컨설턴트' 역할 부여, 정량적/정성적 지표 및 측정 방법 개발</li>
+                    <li><span class="red-check">✓</span> <strong>측정 도구 제작:</strong> 참여자 만족도, 신체 변화 등을 측정할 구체적인 설문지 문항 등 도구 제작</li>
+                    <li><span class="red-check">✓</span> <strong>전문성 강화:</strong> 사업의 성공을 '좋았다'는 평가가 아닌, 구체적인 데이터로 증명할 계획을 수립하여 전문성 제고</li>
+                </ul>
+                <div>
+                    <p class="font-semibold text-lg mb-2 text-yellow-300">Prompt: 성과지표 개발</p>
+                    <pre><code>너는 성과평가 컨설턴트야. 우리 사업의 성공 여부를 판단할 성과지표를 '정량적 지표'와 '정성적 지표'로 나누어 제안하고, 참여자 만족도 설문지 문항 5개를 만들어줘.</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="w-full max-w-4xl text-center">
+            <h2 class="section-title">결과물: 완성된 사업계획서</h2>
+             <p class="section-subtitle">단 20여분의 워크숍을 통해 완결된 사업계획서의 뼈대를 만드는 과정 경험</p>
+            <div class="mt-8 text-left space-y-4 text-xl">
+                <p class="content-card"><span class="red-check">✓</span> <strong>하나의 완결된 초안:</strong> 데이터 기반 필요성, 전문가 수준 커리큘럼, 꼼꼼한 예산, 체계적 성과지표 통합</p>
+                <p class="content-card"><span class="red-check">✓</span> <strong>프로세스의 힘:</strong> 단 20여분의 워크숍을 통해 완결된 사업계획서의 뼈대를 만드는 과정 경험</p>
+                <p class="content-card"><span class="red-check">✓</span> <strong>새로운 역량 확보:</strong> 어떤 주제가 주어져도 막힘없이 기획서를 완성할 수 있는 강력한 방법론 습득</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="w-full max-w-5xl text-center">
+            <h2 class="section-title">심화 활용: 설문조사 결과 분석하기</h2>
+            <p class="section-subtitle">사업이 끝난 후, 수집된 데이터를 분석하고 개선점을 찾는 과정까지 AI와 함께할 수 있습니다.</p>
+            <div class="content-card p-10 text-left text-xl space-y-6">
+                <p><span class="red-check">✓</span> <strong>데이터 분석 요청:</strong> 수집된 만족도 조사 결과를 Gemini에 입력하여 분석 보고서 작성 요청</p>
+                <p><span class="red-check">✓</span> <strong>자동 인사이트 도출:</strong> 평균 점수 계산, 긍정/부정 키워드 추출, 공통 문제점 등을 자동으로 요약 및 식별</p>
+                <p><span class="red-check">✓</span> <strong>개선 방안 제안:</strong> 분석 결과를 바탕으로 '시간 연장', '수준별 분반 운영' 등 구체적인 개선 제안까지 도출</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="w-full max-w-6xl">
+            <h2 class="section-title text-center">Part 4: 전문가로 거듭나기</h2>
+            <p class="section-subtitle text-center">강력한 도구일수록 책임감 있는 사용이 중요합니다. AI를 '맹신'하는 사용자가 아니라, AI를 '지배'하는 전문가가 되기 위한 필수적인 약속입니다.</p>
+             <div class="w-full mx-auto space-y-2"> 
+                <div class="outlook-card">
+                    <div class="outlook-button">
+                        <span>1. AI는 '초안 생성기'일 뿐, 최종 결정권자는 당신입니다.</span>
+                        <span class="transform rotate-180">▼</span>
+                    </div>
+                    <div class="outlook-content">
+                        <p>생성된 모든 내용은 반드시 '초안'으로 간주하고, 지도자의 전문적 판단으로 검토 및 수정해야 합니다. AI가 만든 초안을 최종본으로 간주하고 바로 제출해서는 안 됩니다.</p>
+                    </div>
+                </div>
+                <div class="outlook-card">
+                    <div class="outlook-button">
+                        <span>2. 사실 확인(Fact-Check)은 당신의 책임입니다.</span>
+                        <span class="transform rotate-180">▼</span>
+                    </div>
+                    <div class="outlook-content">
+                        <p>AI는 때때로 그럴듯한 거짓말, 즉 '환각(Hallucination)' 현상을 보일 수 있습니다. 모든 통계, 데이터, 인용문은 반드시 통계청, 시청 보고서 등 공신력 있는 원본 출처에서 교차 확인해야 합니다.</p>
+                    </div>
+                </div>
+                 <div class="outlook-card">
+                    <div class="outlook-button">
+                        <span>3. 표절과 저작권을 항상 유의하세요.</span>
+                        <span class="transform rotate-180">▼</span>
+                    </div>
+                    <div class="outlook-content">
+                        <p>AI가 학습한 데이터에 포함된 내용과 유사한 결과물을 생성할 수 있습니다. 그대로 복사-붙여넣기 할 경우 표절 문제가 발생할 수 있으니, 반드시 자신의 표현으로 다듬고 출처를 명기하는 습관이 필요합니다.</p>
+                    </div>
+                </div>
+                 <div class="outlook-card">
+                    <div class="outlook-button">
+                        <span>4. 개인정보는 절대 입력하지 마세요.</span>
+                        <span class="transform rotate-180">▼</span>
+                    </div>
+                    <div class="outlook-content">
+                        <p>참여자 명단, 연락처, 주민등록번호 등 민감한 개인정보는 보안을 위해 절대로 프롬프트에 입력해서는 안 됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="text-center">
+             <h1 class="text-8xl font-black" style="color: #e0e0e0;">실습</h1>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="text-center">
+             <h1 class="text-9xl font-black" style="color: #e0e0e0;">Q&A</h1>
+        </div>
+    </div>
+    
+    <div class="slide">
+        <div class="text-center">
+             <h1 class="text-8xl font-black mb-12" style="background: linear-gradient(90deg, #00ffff, #ff00ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Thank you</h1>
+             <p class="text-2xl text-gray-300">https://www.artet.me</p>
+             <p class="text-2xl text-gray-300">kyra@artetlab.com</p>
+        </div>
+    </div>
+
+</body>
+</html>
